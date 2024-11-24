@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<theme>
+	<view name="basic">
+		<image name="backgroundImage" extra="true">
+			<size>1 1</size>
+			<pos>0 0</pos>
+			<path>./assets/img/backgrounds/${system.name}.webp</path>
+			<path>./assets/img/backgrounds/auto-${system.name}.webp</path>
+			<zIndex>0</zIndex>
+		</image>
+		<image name="bottomBar" extra="true">
+			<size>1 1</size>
+			<pos>0 0</pos>
+			<path>./assets/img/window/window_fade.png</path>
+			<color>${backgroundColor}</color>
+			<zIndex>1</zIndex>
+		</image>
+		<image name="logoImage" extra="true">
+			<maxSize>.15 .1</maxSize>
+			<pos>.025 .065</pos>
+			<origin>0 .5</origin>
+			<path>./assets/img/logos/${system.name}.png</path>
+			<path>./assets/img/logos/${system.name}.svg</path>
+			<path>./assets/img/logos/auto-${system.name}.png</path>
+			<path>./assets/img/logos/auto-${system.name}.svg</path>
+		</image>
+		<text name="logoText">
+			<fontPath>./assets/FOT.ttf</fontPath>
+			<fontSize>0.092</fontSize>
+			<color>FFFFFFFF</color>
+			<visible>false</visible>
+		</text>
+		
+		
+		<image name="backgroundGrid" extra="true">
+			<origin>0 0</origin>
+			<pos>0.1 0.180</pos>
+			<size>0.8 0.75</size>
+			<path>./assets/img/box.png</path>
+			<color>${backgroundColorFade}</color>
+			<roundCorners>0.01</roundCorners>
+			<zIndex>2</zIndex>
+		</image>
+		<textlist name="gamelist">
+			<selectorColor>${highlightColor}</selectorColor>
+			<selectedColor>FFFFFFFF</selectedColor>
+			<separatorColor>232323</separatorColor>
+			<primaryColor>f1f1f1</primaryColor>
+			<secondaryColor>f1f1f1</secondaryColor>
+			<scrollSound>./_resurse/sounds/scrollgames.wav</scrollSound>
+			<fontPath>${mainFont}</fontPath>
+			<fontSize>0.03</fontSize>
+			<pos>0.1 0.205</pos>
+			<size>0.8 0.7</size>
+			<alignment>center</alignment>
+			<horizontalMargin>0.01</horizontalMargin>
+			<origin>0 0</origin>
+			<lineSpacing>1.5</lineSpacing>
+			<selectorImagePath>./assets/img/box.png</selectorImagePath>
+			<selectorOffsetY>-0.01</selectorOffsetY>
+			<selectorHeight>0.045</selectorHeight>
+		</textlist>
+	</view>
+	
+</theme>

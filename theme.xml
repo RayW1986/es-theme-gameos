@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Theme: A-STARWAR
+Author: SMD © 2024
+-->
+<theme>
+	<formatVersion>7</formatVersion>
+	
+	<include>./views/options.xml</include>
+	<include>./views/variables.xml</include>
+	<include>./views/common.xml</include>
+	<include>./views/screen.xml</include>
+	<include>./views/menu.xml</include>
+	<include>./views/systems/default.xml</include>
+	<include>./views/gamelists/detailed.xml</include>
+	<include>./views/gamelists/grid.xml</include>
+	<include>./views/gamelists/basic.xml</include>
+	<include>./views/gamelists/gameOS.xml</include>
+	<include>./views/help.xml</include>
+	
+</theme>

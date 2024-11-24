@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<theme>
+	<view name="screen">
+		<text name="clock">
+			<color>FFFFFF</color>
+			<fontPath>${clockFont}</fontPath>
+			<fontSize>0.03</fontSize>
+			<origin>1 0</origin>
+			<pos>0.98 0.010</pos>
+			<size>0.072 0.03</size>
+			<alignment>right</alignment>
+			<verticalAlignment>center</verticalAlignment>
+		</text>
+		<controllerActivity name="controllerActivity">
+			<origin>1 0</origin>
+			<pos>0.87 0.010</pos>
+			<size>0.072 0.03</size>
+			<horizontalAlignment>right</horizontalAlignment>
+			<itemSpacing>0.003</itemSpacing>
+			<imagePath>./assets/img/gamepad.svg</imagePath>
+			<color>ffffff</color>
+			<activityColor>ffffff</activityColor>
+			<hotkeyColor>ffffff</hotkeyColor>
+			<fontPath>${mainFont}</fontPath>
+		</controllerActivity>
+		<batteryIndicator name="batteryIndicator">
+			 <pos>0.92 0.001</pos>
+			 <size>0.07 0.050</size>
+			 <color>ffffff</color>
+			 <itemSpacing>0</itemSpacing>
+			 <full>./_resurse/images/battery-100-vertical.svg</full>
+			 <at75>./_resurse/images/battery-75-vertical.svg</at75>
+			 <at50>./_resurse/images/battery-50-vertical.svg</at50>
+			 <at25>./_resurse/images/battery-25-vertical.svg</at25>
+			 <empty>./_resurse/images/battery-0-vertical.svg</empty>
+			 <incharge>./_resurse/images/battery-charging-vertical.svg</incharge>
+			 <networkIcon>./_resurse/images/wifi-vertical.svg</networkIcon>
+			 <visible>false</visible>
+		</batteryIndicator>
+	</view>
+</theme>

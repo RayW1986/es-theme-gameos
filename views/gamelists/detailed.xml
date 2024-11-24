@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<theme>
+	<view name="detailed">
+		<textlist name="gamelist">
+			<fontPath>${mainFont}</fontPath>
+			<fontSize>0.030</fontSize>
+			<forceUppercase>true</forceUppercase>
+			<size>0.504 0.805</size>
+			<pos>0.02 0.15</pos>
+			<alignment>left</alignment>
+			<horizontalMargin>0.02</horizontalMargin>
+			<selectorColor>${highlightColor}</selectorColor>
+			<selectedColor>FFFFFFFF</selectedColor>
+			<primaryColor>FFFFFFAA</primaryColor>
+			<scrollbarSize>0</scrollbarSize>
+			<scaleOrigin>0.5 0.25</scaleOrigin>
+		</textlist>
+		<gridtile name="default">
+			<backgroundCenterColor>${gridColor}</backgroundCenterColor>
+			<backgroundEdgeColor>${gridColor}</backgroundEdgeColor>
+			<imageSizeMode>minSize</imageSizeMode>
+			<padding>5 5</padding>
+			<backgroundCornerSize>0 0</backgroundCornerSize>
+			<imageColor>404040FF</imageColor>
+		</gridtile>
+		<image name="gridtile.marquee">
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+			<size>0.90 0.90</size>
+		</image>
+		<gridtile name="selected">
+			<backgroundCenterColor>${highlightColor}</backgroundCenterColor>
+			<backgroundEdgeColor>${highlightColor}</backgroundEdgeColor>
+		</gridtile>
+		<image name="backgroundFade" extra="true">
+			<size>1 1</size>
+			<pos>0 0</pos>
+			<path>./assets/img/window/window_fade.png</path>
+			<color>${backgroundColor}</color>
+			<zIndex>2</zIndex>
+		</image>	
+		<image name="backgroundGrid" extra="true">
+			<origin>0 0</origin>
+			<pos>0.015 0.14</pos>
+			<size>0.513 0.825</size>
+			<path>./assets/img/box.png</path>
+			<color>${backgroundColorFade}</color>
+			<roundCorners>0.01</roundCorners>
+			<zIndex>2</zIndex>
+		</image>
+		<image name="logo">
+			<maxSize>.15 .1</maxSize>
+			<pos>.025 .065</pos>
+			<origin>0 .5</origin>
+			<path>./assets/img/logos/${system.name}.png</path>
+			<path>./assets/img/logos/${system.name}.svg</path>
+			<path>./assets/img/logos/auto-${system.name}.png</path>
+			<path>./assets/img/logos/auto-${system.name}.svg</path>
+		</image>
+		<text name="logoText">
+			<fontPath>${mainFont}</fontPath>
+			<fontSize>0.092</fontSize>
+			<color>FFFFFFFF</color>
+			<visible>false</visible>
+		</text>
+		<rating name="md_rating">
+			<pos>0.55 0.15</pos>
+			<size>0.05 0.03</size>
+			<horizontalAlignment>left</horizontalAlignment>
+			<color>${highlightColor}</color>
+			<unfilledColor>808080</unfilledColor>
+			<unfilledPath>:/star_filled.svg</unfilledPath>
+		</rating>
+		<text name="md_name">
+			<color>FFFFFFFF</color>
+			<fontPath>${mainFont}</fontPath>
+			<pos>0.55 0.18</pos>
+			<size>0.4 0.05</size>
+			<fontSize>0.035</fontSize>
+			<alignment>left</alignment>
+		</text>
+		<text name="md_players">
+			<color>FFFFFFFF</color>
+			<fontPath>./assets/fonts/players.ttf</fontPath>
+			<pos>0.55 0.22</pos>
+			<text>1</text>
+			<size>0.4 0.05</size>
+			<fontSize>0.035</fontSize>
+			<alignment>left</alignment>
+			<color>${highlightColor}</color>
+		</text>
+		<text name="gameDetails" extra="true">
+			<fontPath>${mainFont}</fontPath>
+			<pos>0.575 0.22</pos>
+			<text>• {game:genre}</text>
+			<size>0.4 0.05</size>
+			<fontSize>0.025</fontSize>
+			<alignment>left</alignment>
+			<color>${highlightColor}</color>
+			<forceUppercase>true</forceUppercase>
+		</text>
+		<text name="gameDetailsBullet" extra="true">
+			<fontPath>${mainFont}</fontPath>
+			<pos>0.575 0.22</pos>
+			<text>•</text>
+			<size>0.4 0.05</size>
+			<fontSize>0.025</fontSize>
+			<alignment>left</alignment>
+			<color>808080</color>
+			<forceUppercase>true</forceUppercase>
+		</text>
+		<image name="screenshot" extra="true">
+			<size>0.28 0.4</size>
+			<pos>0.55 0.27</pos>
+			<origin>0 0</origin>
+			<path>{game:image}</path>
+			<roundCorners>0.02</roundCorners>
+			<zIndex>3</zIndex>
+		</image>		 
+		<video name="md_video">
+			<size>0.28 0.4</size>
+			<pos>0.55 0.27</pos>
+			<origin>0 0</origin>
+			<interpolation>linear</interpolation>
+			<delay>1</delay>
+			<showSnapshotNoVideo>false</showSnapshotNoVideo>
+			<showSnapshotDelay>false</showSnapshotDelay>
+			<effect>bump</effect>
+			<loops>0</loops>
+			<roundCorners>0.02</roundCorners>
+			<visible ifSubset="allowVideo:yes">true</visible>
+			<visible ifSubset="allowVideo:no">false</visible>
+			<zIndex>3</zIndex>
+		</video>
+		<image name="extraInfoBackground" extra="true">
+			<size>0.45 0.825</size>
+			<pos>0.54 0.14</pos>
+			<origin>0 0</origin>
+			<path>./assets/img/box.png</path>
+			<color>${backgroundColorFade}</color>
+			<roundCorners>0.01</roundCorners>
+			<zIndex>2</zIndex>
+		</image>
+		<text name="gameReleaseHeader" extra="true">
+			<pos>0.84 0.3</pos>
+			<size>0.15 .02</size>
+			<origin>0 0</origin>
+			<text>Release Year</text>
+			<fontPath>${mainFont}</fontPath>
+			<fontSize>0.02</fontSize>
+			<color>${highlightColor}</color>
+			<forceUppercase>true</forceUppercase>
+		</text>
+		<datetime name="md_releasedate">
+			<pos>0.84 0.325</pos>
+			<size>0.15 0.017</size>
+			<fontSize>0.017</fontSize>
+			<color>FFFFFF</color>
+			<format>%Y</format>
+			<fontPath>${mainFont}</fontPath>
+		</datetime>
+		<text name="gameDeveloperHeader" extra="true">
+			<pos>0.84 0.375</pos>
+			<size>0.15 0.02</size>
+			<text>Developer</text>
+			<fontPath>${mainFont}</fontPath>
+			<fontSize>0.02</fontSize>
+			<color>${highlightColor}</color>
+			<alignment>left</alignment>
+			<forceUppercase>true</forceUppercase>
+		</text>		
+		<text name="gameDeveloper" extra="true">
+			<pos>0.84 0.4</pos>
+			<size>0.15 0.017</size>
+			<fontSize>0.017</fontSize>
+			<text>{game:developer}</text>
+			<fontPath>${mainFont}</fontPath>
+			<alignment>left</alignment>
+			<verticalAlignment>top</verticalAlignment>
+			<lineSpacing>1</lineSpacing>
+			<color>FFFFFF</color>
+			<forceUppercase>true</forceUppercase>
+		</text>
+		<text name="gamePublisherHeader" extra="true">
+			<pos>0.84 0.45</pos>
+			<size>0.15 0.02</size>
+			<text>Publisher</text>
+			<fontPath>${mainFont}</fontPath>
+			<fontSize>0.02</fontSize>
+			<color>${highlightColor}</color>
+			<alignment>left</alignment>
+			<forceUppercase>true</forceUppercase>
+		</text>		
+		<text name="gamePublisher" extra="true">
+			<pos>0.84 0.475</pos>
+			<size>0.15 0.017</size>
+			<fontSize>0.017</fontSize>
+			<text>{game:publisher}</text>
+			<fontPath>${mainFont}</fontPath>
+			<alignment>left</alignment>
+			<color>FFFFFF</color>
+			<forceUppercase>true</forceUppercase>
+		</text>
+		<text name="md_description">
+			<pos>0.55 0.685</pos>
+			<size>0.43 0.27</size>
+			<fontSize>0.02</fontSize>
+			<lineSpacing>1.25</lineSpacing>
+			<color>FFFFFF</color>
+			<fontPath>${mainFont}</fontPath>
+		</text> 
+	</view>
+</theme>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<theme>
+	<customView name="gameOS" inherits="grid" displayName="GameOS">
+		<imagegrid name="gamegrid">
+			<pos>0.021 0.77</pos>
+			<size>0.958 0.21</size>
+			<margin>0.005 0</margin>
+			<scrollDirection>horizontal</scrollDirection>
+			<autoLayout>6 1</autoLayout>
+		</imagegrid>
+		<image name="backgroundGrid" extra="true">
+			<size>1 1</size>
+			<pos>0 .75</pos>
+			<path>./assets/img/box.png</path>
+			<color>${backgroundColor}</color>
+			<roundCorners>0</roundCorners>
+			<zIndex>2</zIndex>
+		</image>
+		<image name="extraInfoBackground" extra="true">
+			<origin>0 0</origin>
+			<size>0.9 0.59</size>
+			<pos>0.05 0.125</pos>
+		</image>
+		<image name="screenshot" extra="true">
+			<size>0.35 0.46</size>
+			<pos>0.25 0.362</pos>
+			<origin>0.5 0.5</origin>
+		</image>		 
+		<video name="md_video">
+			<pos>0.25 0.362</pos>
+			<origin>0.5 0.5</origin>
+			<size>0.35 0.46</size>
+		</video>
+		<rating name="md_rating">
+			<pos>0.46 0.15</pos>
+		</rating>
+		<text name="md_name">
+			<pos>0.46 0.18</pos>
+			<size>0.47 0.05</size>
+		</text>
+		<text name="md_players">
+			<pos>0.46 0.22</pos>
+		</text>
+		<text name="gameDetails" extra="true">
+			<pos>0.485 0.22</pos>
+		</text>
+		<text name="gameDetailsBullet" extra="true">
+			<pos>0.485 0.22</pos>
+		</text>
+		<datetime name="md_releasedate">
+			<color>FFFFFF</color>
+			<pos>0.08 0.6</pos>
+			<size>0 0.025</size>
+			<format>%Y</format>
+			<fontSize>0.025</fontSize>
+			<fontPath>${mainFont}</fontPath>
+		</datetime>
+		<text name="gameDeveloper" extra="true">
+			<fontPath>${mainFont}</fontPath>
+			<pos>0.08 0.635</pos>
+			<text>Developer: {game:developer}</text>
+			<size>0.4 0.025</size>
+			<fontSize>0.025</fontSize>
+			<alignment>left</alignment>
+			<color>FFFFFF</color>
+			<forceUppercase>true</forceUppercase>
+		</text>
+		<text name="gamePublisher" extra="true">
+			<fontPath>${mainFont}</fontPath>
+			<pos>0.08 0.670</pos>
+			<text>Publisher:  {game:publisher}</text>
+			<size>0.4 0.025</size>
+			<fontSize>0.025</fontSize>
+			<alignment>left</alignment>
+			<color>FFFFFF</color>
+			<forceUppercase>true</forceUppercase>
+		</text>
+		<text name="md_description">
+			<pos>0.46 0.3</pos>
+			<size>0.47 0.4</size>
+		</text>
+		<text name="gameDeveloperHeader, gamePublisherHeader, gameReleaseHeader" extra="true">
+			<visible>false</visible>
+		</text>
+	</customView>
+</theme>

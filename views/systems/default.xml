@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<theme>
+	<view name="system">
+		<imagegrid name="imagegrid">
+			<margin>0.005 0</margin>
+			<pos>0.021 0.77</pos>
+			<origin>0 0</origin>
+			<size>0.958 0.21</size>
+			<scrollDirection>horizontal</scrollDirection>
+			<autoLayout>6 1</autoLayout>
+			<centerSelection>false</centerSelection>
+			<autoLayoutSelectedZoom>1</autoLayoutSelectedZoom>
+			<animateSelection>false</animateSelection>
+			<scrollLoop>true</scrollLoop>
+		</imagegrid>
+		<gridtile name="default">
+			<padding>30 16</padding>
+			<backgroundCenterColor>${gridColor}</backgroundCenterColor>
+			<backgroundEdgeColor>${gridColor}</backgroundEdgeColor>
+			<imageSizeMode>maxSize</imageSizeMode>
+			<imageColor>FFFFFFAA</imageColor>
+			<backgroundCornerSize>0 0</backgroundCornerSize>
+		</gridtile>
+		<gridtile name="selected">
+			<padding>30 16</padding>
+			<backgroundCenterColor>${highlightColor}</backgroundCenterColor>
+			<backgroundEdgeColor>${highlightColor}</backgroundEdgeColor>
+			<imageColor>FFFFFFFF</imageColor>
+		</gridtile>
+		<image name="backgroundFade" extra="true">
+			<size>1 1</size>
+			<pos>0 0</pos>
+			<path>./assets/img/window/window_fade.png</path>
+			<color>${backgroundColor}</color>
+			<zIndex>2</zIndex>
+		</image>		
+		<image name="bottomBar" extra="true">
+			<size>1 1</size>
+			<pos>0 0</pos>
+			<path>./assets/img/window/selector_bottom.png</path>
+			<color>${backgroundColor}</color>
+			<zIndex>2</zIndex>
+		</image>
+		
+		<image name="gameOS" extra="true">
+			<maxSize>.15 .1</maxSize>
+			<pos>.025 .04</pos>
+			<path>./assets/img/gameOs-logo.png</path>
+			<zIndex>5</zIndex>
+		</image>
+		<image name="backgroundImage" extra="true">
+			<size>1 1</size>
+			<pos>0 0</pos>
+			<path>./assets/img/backgrounds/${system.name}.webp</path>
+			<path>./assets/img/backgrounds/auto-${system.name}.webp</path>
+			<zIndex>0</zIndex>
+		</image>
+		<image name="logo">
+			<path>./assets/img/logos/${system.name}.png</path>
+			<path>./assets/img/logos/${system.name}.svg</path>
+			<path>./assets/img/logos/auto-${system.name}.png</path>
+			<path>./assets/img/logos/auto-${system.name}.svg</path>
+		</image>
+		<text name="logoText">
+			<fontPath>./assets/FOT.ttf</fontPath>
+			<fontSize>0.092</fontSize>
+			<color>FFFFFFFF</color>
+		</text>
+		<text name="systemInfo">
+			<pos>0.400 0.830</pos>
+			<size>1 0.27</size>
+			<color>ffffff</color>
+			<fontPath>./assets/SEA.ttf</fontPath>
+			<fontSize>0.03</fontSize>
+			<visible>false</visible>
+		</text>		
+		
+	</view>
+	
+</theme>

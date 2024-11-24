@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<theme>
+	<view name="menu">
+		<menuText name="menutitle">
+			<fontPath>${mainFont}</fontPath>
+			<fontSize>0.04</fontSize>
+			<color>ffffff</color>
+		</menuText>
+		<menuText name="menufooter">
+			<fontPath>${mainFont}</fontPath>
+			<fontSize>0.025</fontSize>
+		</menuText>
+		<menuText name="menutext">
+			<fontPath>${mainFont}</fontPath>
+			<fontSize>0.03</fontSize>
+			<color>AAAAAA</color>
+			<selectorColor>${highlightColor}</selectorColor>
+			<selectedColor>ffffff</selectedColor>
+			<separatorColor>AAAAAA00</separatorColor>
+			<scrollSound>./_resurse/sounds/menu.wav</scrollSound>
+		</menuText>
+		<menuTextSmall name="menutextsmall">
+			<fontPath>${mainFont}</fontPath>
+			<fontSize>0.02</fontSize>
+		</menuTextSmall>
+		<menuBackground name="menubg">
+			<color>${gridColor}</color>
+			<cornerSize>32 32</cornerSize>
+		</menuBackground>
+	</view>	
+</theme>

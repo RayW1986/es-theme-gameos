@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<theme>
+	<variables>
+		<mainFont>./assets/fonts/OpenSans-Semibold.ttf</mainFont>
+		<clockFont>./assets/fonts/BebasNeue-Regular.ttf</clockFont>
+		
+		<gridColor>303030FF</gridColor>
+		<gridColor ifSubset="colorset:default">2A3457FF</gridColor>
+		<backgroundColor>1F1F1FFF</backgroundColor>
+		<backgroundColor ifSubset="colorset:default">222B48FF</backgroundColor>
+		<backgroundColorFade>1F1F1FAA</backgroundColorFade>
+		<backgroundColorFade ifSubset="colorset:default">222B48AA</backgroundColorFade>
+		<highlightColor ifSubset="colorset:default">F00880FF</highlightColor>
+		<highlightColor ifSubset="colorset:blue">30519cFF</highlightColor>
+		<highlightColor ifSubset="colorset:brown">806044FF</highlightColor>
+		<highlightColor ifSubset="colorset:grey">5e5c5dFF</highlightColor>
+		<highlightColor ifSubset="colorset:green">288928FF</highlightColor>		
+		<highlightColor ifSubset="colorset:pink">c52884FF</highlightColor>		
+		<highlightColor ifSubset="colorset:red">ab283bFF</highlightColor>		
+		<highlightColor ifSubset="colorset:magenta">b857c6FF</highlightColor>		
+		<highlightColor ifSubset="colorset:orange">ed5b28FF</highlightColor>		
+		
+	</variables>
+</theme>

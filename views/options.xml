@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<theme>
+	
+	<subset name="colorset" displayName="Colour Scheme">
+		<include name="default" displayName="Default" />
+		<include name="blue" displayName="Blue on Grey" />
+		<include name="brown" displayName="Brown on Grey" />
+		<include name="green" displayName="Green on Grey" />
+		<include name="grey" displayName="Grey on Grey" />
+		<include name="magenta" displayName="Magenta on Grey" />
+		<include name="orange" displayName="Orange on Grey" />
+		<include name="pink" displayName="Pink on Grey" />
+		<include name="red" displayName="Red on Grey" />
+	</subset>
+	
+	<subset name="allowVideo" displayName="Allow Video Playback">
+		<include name="yes" displayName="Yes" />
+		<include name="no" displayName="No" />
+	</subset>
+	
+	<subset name="gridBackground" displayName="Show Grid Background Image">
+		<include name="yes" displayName="Yes" />
+		<include name="no" displayName="No" />
+	</subset>
+	
+	<subset name="backdrop" displayName="Background Image">
+		<include name="fanart" displayName="Fanart" />
+		<include name="screenshot" displayName="Screenshot" />
+		<include name="none" displayName="System Fanart" />
+	</subset>
+	
+</theme>

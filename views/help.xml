@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<theme>
+	<view name="system, basic, grid, detailed, gameOS">
+		<helpsystem name="help">
+			<origin>1 0</origin>
+			<pos>.99 0.05</pos>
+			<textColor>FFFFFFFF</textColor>
+			<iconColor>${highlightColor}</iconColor>
+			<fontPath>${clockFont}</fontPath>
+			<fontSize>.02</fontSize>
+		</helpsystem>
+	</view>
+		
+</theme>

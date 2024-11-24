@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<theme>
+	<view name="detailed, grid">
+		<image name="backgroundImage" extra="true">
+			<size>1 1</size>
+			<pos>0 0</pos>
+			<path ifSubset="backdrop:fanart">exists({game:fanart}) ? {game:fanart} : {game:image}</path>
+			<path ifSubset="backdrop:screenshot">{game:image}</path>
+			<path ifSubset="backdrop:none">./assets/img/backgrounds/${system.name}.webp</path>
+			<path ifSubset="backdrop:none">./assets/img/backgrounds/auto-${system.name}.webp</path>
+			<zIndex>0</zIndex>
+		</image>
+	</view>
+	
+</theme>
